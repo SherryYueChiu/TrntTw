@@ -1,0 +1,27 @@
+{
+  "name": "com.sherryyue.trnttw",
+  "displayName": "未竟之路",
+  "version": "1.0.0",
+  "description": "未竟之路手機版",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "SherryYue",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "cordova-android": "^9.1.0",
+    "cordova-browser": "^6.0.0",
+    "cordova-plugin-inappbrowser": "^5.0.0",
+    "cordova-plugin-whitelist": "^1.3.4"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-inappbrowser": {}
+    }
+  }
+}

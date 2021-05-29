@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.sherryyue.trnttw" 
+version="1.0.0" 
+xmlns="http://www.w3.org/ns/widgets" 
+xmlns:android="http://schemas.android.com/apk/res/android" 
+xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>未竟之路</name>
+    <description>
+        未竟之路手機版
+    </description>
+    <author email="sherryyue.c@protonmail.com" href="https://sherryyuechiu.github.io/card">
+        SherryYue玥餅
+    </author>
+    <icon src="res/logo.png"/>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-intent href="tg:*" />
+    <allow-intent href="whatsapp:*" />
+    <allow-intent href="line:*" />
+    <allow-intent href="*" />
+    <preference name="AllowedSchemes" value="tel,sms,mailto,geo,tg,twitter,whatsapp,line" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
+            <application android:usesCleartextTraffic="true" />
+        </edit-config>
+        <preference name="AppendUserAgent" value="Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.210 Mobile Safari/537.36" />
+        <preference name="OverrideUserAgent" value="Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.210 Mobile Safari/537.36" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+</widget>
